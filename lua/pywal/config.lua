@@ -3,7 +3,7 @@ local M = {}
 M.highlights_base = function (colors)
   return {
     Normal = { fg = colors.foreground, bg = colors.background },
-    StatusLineNC = { bg = colors.background, fg = colors.background },
+    StatusLineNC = { bg = colors.background, fg = colors.color2 },
     StatusLine = { bg = colors.background, fg = colors.background },
     SignColumn = { bg = colors.background, fg = colors.background },
     MsgArea = { fg = colors.foreground, bg = colors.background },
@@ -223,7 +223,7 @@ M.highlights_base = function (colors)
     NvimTreeImageFile = { fg = colors.foreground },
     NvimTreeSymlink = { fg = colors.color7 },
     NvimTreeFolderIcon = { fg = colors.color2, bg = colors.background },
-    NvimTreeStatusLineNC = { bg = colors.background, fg = colors.background },
+    NvimTreeStatusLineNC = { bg = colors.background, fg = colors.color3 },
 
     -- LspSaga
     LspFloatWinNormal = { bg = colors.background },
